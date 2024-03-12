@@ -60,9 +60,9 @@
     <section class="relative">
         <div class="relative">
             <img class="" src=".\Images\Background.png" alt="Background_image">
-            <div class="bg-white/70 w-32 h-12 absolute z-50 left-2 top-2 bottom-0 rounded-[0.5rem] ">
+            <div class="hidden md:flex bg-white/70 w-32 h-12 absolute z-50 left-2 top-2 bottom-0 rounded-[0.5rem] ">
             </div>
-            <img class="absolute -top-2  left-2 w-32 z-50 right-2 bottom-0" src=".\Images\Jettwings updated_2023.png"
+            <img class="hidden md:flex absolute -top-2  left-2 w-32 z-50 right-2 bottom-0" src=".\Images\Jettwings updated_2023.png"
                 alt="Logo">
         </div>
 
@@ -103,37 +103,40 @@
 
 <!--For mobile-->
 
-<div class="div w-full flex-col justify-center items-center">
-    <div class="flex md:hidden w-full bg-gray-400/50 flex-col justify-center items-center rounded-lg">
-        <img class="h-[8rem] w-[12rem] mt-[-2rem]" src=".\Images\Jettwings updated_2023.png" alt="Logo">
-        <p class="text-[1.5rem] font-bold text-white mt-[-2rem]">Enroll Your Course Now</p>
-        <div class="flex flex-col space-y-4 mt-2 w-full">
-            <input type="text" placeholder="Enter your Name"
-                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70" />
-            <select name="Course" id="Course"
-                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70">
-                <option value="">Select your course</option>
-                <option value="/">a</option>
-                <option value="/">b</option>
-                <option value="/">c</option>
-                <option value="/">d</option>
-            </select>
-            <select name="Specialization" id="Specialization"
-                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70">
-                <option value="" disabled selected>Select Specialization</option>
-                <option value="/">a</option>
-                <option value="/">b</option>
-                <option value="/">c</option>
-                <option value="/">d</option>
-            </select>
-            <input type="text" placeholder="Enter your Contact number"
-                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70" />
-            <input type="text" placeholder="Enter your Email"
-                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70" />
+<div class=" md:hidden flex flex-col items-center bg-black/20 justify-center">
+    <div class="flex mt-8 flex-col bg-gray-50 rounded-lg p-8 space-y-4 sm:space-y-0 sm:flex-row">
+        <img class="h-[8rem] w-[12rem] mt-[-2rem] mx-auto sm:mr-8" src=".\Images\Jettwings updated_2023.png" alt="Logo">
+        <div class="space-y-4">
+            <h1 class="text-3xl font-semibold mt-[-2rem] text-gray-900">Enroll Your Course Now</h1>
+            <div class="flex flex-col space-y-2">
+                <input type="text" placeholder="Enter your Name" class="py-2 px-4 rounded-md border border-gray-300" />
+                <select name="Course" id="Course"
+                    class="py-2 px-4 rounded-md border border-gray-300 focus:ring-red-500 focus:border-red-500">
+                    <option value="">Select your course</option>
+                    <option value="/">a</option>
+                    <option value="/">b</option>
+                    <option value="/">c</option>
+                    <option value="/">d</option>
+                </select>
+                <select name="Specialization" id="Specialization"
+                    class="py-2 px-4 rounded-md border border-gray-300 focus:ring-red-500 focus:border-red-500">
+                    <option value="" disabled selected>Select Specialization</option>
+                    <option value="/">a</option>
+                    <option value="/">b</option>
+                    <option value="/">c</option>
+                    <option value="/">d</option>
+                </select>
+                <input type="text" placeholder="Enter your Contact number"
+                    class="py-2 px-4 rounded-md border border-gray-300" />
+                <input type="text" placeholder="Enter your Email"
+                    class="py-2 px-4 rounded-md border border-gray-300" />
+            </div>
+            <div class="flex justify-center">
+                <button type="submit"
+                    class="py-2 px-8 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-md focus:ring-red-500 focus:border-red-500">Enroll
+                    Now</button>
+            </div>
         </div>
-        <button
-            class="bg-red-600 hover:bg-red-700 text-white text-[1rem] font-bold px-[8rem] py-[0.7rem] rounded-lg block mt-4">Enroll
-            Now</button>
     </div>
 </div>
 
