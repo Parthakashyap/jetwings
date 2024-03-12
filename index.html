@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JetWings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <style>
+        
+        /* CSS for scrolling horizontally animation */
+        .recruiters-container {
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .recruiters-list {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+
+        .recruiters-list li {
+            display: inline-block;
+            margin-right: 20px;
+            /* Adjust spacing between images */
+        }
+    </style>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        'infinite-scroll': 'infinite-scroll 20s linear infinite',
+                    },
+                    keyframes: {
+                        'infinite-scroll': {
+                            from: {
+                                transform: 'translateX(0)'
+                            },
+                            to: {
+                                transform: 'translateX(-100%)'
+                            },
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+
+
+</head>
+
+<body class="max-w-[1800px] m-auto">
+
+    <section class="relative">
+        <div class="relative">
+            <img class="" src=".\Images\Background.png" alt="Background_image">
+            <div class="bg-white/70 w-32 h-12 absolute z-50 left-2 top-2 bottom-0 rounded-[0.5rem] ">
+            </div>
+            <img class="absolute -top-2  left-2 w-32 z-50 right-2 bottom-0" src=".\Images\Jettwings updated_2023.png"
+                alt="Logo">
+        </div>
+
+        <div
+            class="hidden md:flex w-[30rem] h-[35rem] bg-gray-400/50 flex-col justify-center items-center absolute top-[33rem] right-[-12rem] transform -translate-x-1/2 -translate-y-1/2 rounded-lg">
+            <img class="h-[10rem] w-[15rem] mt-[-4rem]" src=".\Images\Jettwings updated_2023.png" alt="Logo">
+            <p class="text-[2rem] font-bold text-white mt-[-4rem]">Enroll Your Course Now</p>
+            <div class="flex flex-col space-y-[1rem] mt-[0.3rem]">
+                <input type="text" placeholder="Enter your Name"
+                    class="px-[8rem] py-[1rem] text-center rounded-md border border-gray-200/70" />
+                <select name="Course" id="Course"
+                    class="px-[8rem] py-[1rem] text-center rounded-md border border-gray-200/70">
+                    <option value="">Select your course</option>
+                    <option value="/">a</option>
+                    <option value="/">b</option>
+                    <option value="/">c</option>
+                    <option value="/">d</option>
+                </select>
+                <select name="Specialization" id="Specialization"
+                    class="px-[8rem] py-[1rem] text-center rounded-md border border-gray-200/70">
+                    <option value="" disabled selected>Select Specialization</option>
+                    <option value="/">a</option>
+                    <option value="/">b</option>
+                    <option value="/">c</option>
+                    <option value="/">d</option>
+                </select>
+                <input type="text" placeholder="Enter your Contact number"
+                    class="px-[8rem] py-[1rem] text-center rounded-md border border-gray-200/70" />
+                <input type="text" placeholder="Enter your Email"
+                    class="px-[8rem] py-[1rem] text-center rounded-md border border-gray-200/70" />
+            </div>
+            <button
+                class="bg-red-600 hover:bg-red-700 text-white text-[1.2rem] font-bold px-[10.6rem] py-[0.9rem] rounded-lg block mt-4">Enroll
+                Now</button>
+        </div>
+
+    </section>
+
+<!--For mobile-->
+
+<div class="div w-full flex-col justify-center items-center">
+    <div class="flex md:hidden w-full bg-gray-400/50 flex-col justify-center items-center rounded-lg">
+        <img class="h-[8rem] w-[12rem] mt-[-2rem]" src=".\Images\Jettwings updated_2023.png" alt="Logo">
+        <p class="text-[1.5rem] font-bold text-white mt-[-2rem]">Enroll Your Course Now</p>
+        <div class="flex flex-col space-y-4 mt-2 w-full">
+            <input type="text" placeholder="Enter your Name"
+                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70" />
+            <select name="Course" id="Course"
+                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70">
+                <option value="">Select your course</option>
+                <option value="/">a</option>
+                <option value="/">b</option>
+                <option value="/">c</option>
+                <option value="/">d</option>
+            </select>
+            <select name="Specialization" id="Specialization"
+                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70">
+                <option value="" disabled selected>Select Specialization</option>
+                <option value="/">a</option>
+                <option value="/">b</option>
+                <option value="/">c</option>
+                <option value="/">d</option>
+            </select>
+            <input type="text" placeholder="Enter your Contact number"
+                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70" />
+            <input type="text" placeholder="Enter your Email"
+                class="px-[2rem] py-[0.8rem] text-center rounded-md border border-gray-200/70" />
+        </div>
+        <button
+            class="bg-red-600 hover:bg-red-700 text-white text-[1rem] font-bold px-[8rem] py-[0.7rem] rounded-lg block mt-4">Enroll
+            Now</button>
+    </div>
+</div>
+
+
+
+    <!-- End of Font Section -->
+
+    <p class="text-3xl text-center bg-black/20 h-[26rem] relative ">
+        <br/>Introducing <span class="text-red-500">JetWings</span>, A premier Aviation Company Based In India.
+        <br />With A Focus On Excellence And Safety. We Offer <span class="text-red-500">Top-Notch</span>
+        Aviation<br />Services To meet <span class="text-red-500">All</span> Your Travel Needs.
+
+        <div class="bg-white w-full h-[5rem] rounded-t-[100%] absolute mt-[-5rem]"></div>
+    </p>
+
+
+    <!--End of About Section-->
+
+    <div>
+        <div class="font-bold xxl:text-7xl text-4xl text-center mt-[7rem]">COURSES</div>
+        <div class="grid p-4 lg:grid-cols-3 gap-x-12 gap-y-12 mt-[8rem] mx-auto container">
+            <div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
+                style="background-image: url('./Images/Course_bg.jpg')">
+
+                <div class="z-[99999] absolute bottom-10">
+                <p class="font-bold text-2xl mt-[-7rem] ">Aviation, Hospitality and Tourism Management</p>
+                <p class="text-sm text-medium mt-4">Integrated Graduate Diploma</p>
+                <p class="text-lg mt-2">Jettwings:IGD-AHTM</p>
+                <p class="text-[0.8rem] mt-4">10 + 2 Pass/Appeared</p>
+                <p class="text-[0.8rem] ">10 + 3 Months</p>
+                </div>
+                <a href="#" class="bg-white z-[9999999] text-red-500 rounded-2xl px-3 py-1 right-5 top-[12rem] absolute">See Details</a>
+
+                <div class="bg-gradient-to-t from-red-500  to-transparent rounded-[2rem] absolute w-full right-0 left-0  h-full top-0 bottom-0"></div>
+            </div>
+            
+            <div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
+            style="background-image: url('./Images/Course_bg.jpg')">
+
+            <div class="z-[99999] absolute bottom-10">
+            <p class="font-bold text-2xl mt-[-7rem] ">Aviation, Hospitality and Tourism Management</p>
+            <p class="text-sm text-medium mt-4">Integrated Graduate Diploma</p>
+            <p class="text-lg mt-2">Jettwings:IGD-AHTM</p>
+            <p class="text-[0.8rem] mt-4">10 + 2 Pass/Appeared</p>
+            <p class="text-[0.8rem] ">10 + 3 Months</p>
+            </div>
+            <a href="#" class="bg-white z-[9999999] text-red-500 rounded-2xl px-3 py-1 right-5 top-[12rem] absolute">See Details</a>
+
+            <div class="bg-gradient-to-t from-red-500  to-transparent rounded-[2rem] absolute w-full right-0 left-0  h-full top-0 bottom-0"></div>
+        </div>
+            
+        <div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
+        style="background-image: url('./Images/Course_bg.jpg')">
+
+        <div class="z-[99999] absolute bottom-10">
+        <p class="font-bold text-2xl mt-[-7rem] ">Aviation, Hospitality and Tourism Management</p>
+        <p class="text-sm text-medium mt-4">Integrated Graduate Diploma</p>
+        <p class="text-lg mt-2">Jettwings:IGD-AHTM</p>
+        <p class="text-[0.8rem] mt-4">10 + 2 Pass/Appeared</p>
+        <p class="text-[0.8rem] ">10 + 3 Months</p>
+        </div>
+        <a href="#" class="bg-white z-[9999999] text-red-500 rounded-2xl px-3 py-1 right-5 top-[12rem] absolute">See Details</a>
+
+        <div class="bg-gradient-to-t from-red-500  to-transparent rounded-[2rem] absolute w-full right-0 left-0  h-full top-0 bottom-0"></div>
+    </div>
+            
+    <div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
+    style="background-image: url('./Images/Course_bg.jpg')">
+
+    <div class="z-[99999] absolute bottom-10">
+    <p class="font-bold text-2xl mt-[-7rem] ">Aviation, Hospitality and Tourism Management</p>
+    <p class="text-sm text-medium mt-4">Integrated Graduate Diploma</p>
+    <p class="text-lg mt-2">Jettwings:IGD-AHTM</p>
+    <p class="text-[0.8rem] mt-4">10 + 2 Pass/Appeared</p>
+    <p class="text-[0.8rem] ">10 + 3 Months</p>
+    </div>
+    <a href="#" class="bg-white z-[9999999] text-red-500 rounded-2xl px-3 py-1 right-5 top-[12rem] absolute">See Details</a>
+
+    <div class="bg-gradient-to-t from-red-500  to-transparent rounded-[2rem] absolute w-full right-0 left-0  h-full top-0 bottom-0"></div>
+</div>
+            
+<div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
+style="background-image: url('./Images/Course_bg.jpg')">
+
+<div class="z-[99999] absolute bottom-10">
+<p class="font-bold text-2xl mt-[-7rem] ">Aviation, Hospitality and Tourism Management</p>
+<p class="text-sm text-medium mt-4">Integrated Graduate Diploma</p>
+<p class="text-lg mt-2">Jettwings:IGD-AHTM</p>
+<p class="text-[0.8rem] mt-4">10 + 2 Pass/Appeared</p>
+<p class="text-[0.8rem] ">10 + 3 Months</p>
+</div>
+<a href="#" class="bg-white z-[9999999] text-red-500 rounded-2xl px-3 py-1 right-5 top-[12rem] absolute">See Details</a>
+
+<div class="bg-gradient-to-t from-red-500  to-transparent rounded-[2rem] absolute w-full right-0 left-0  h-full top-0 bottom-0"></div>
+</div>
+            
+<div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
+style="background-image: url('./Images/Course_bg.jpg')">
+
+<div class="z-[99999] absolute bottom-10">
+<p class="font-bold text-2xl mt-[-7rem] ">Aviation, Hospitality and Tourism Management</p>
+<p class="text-sm text-medium mt-4">Integrated Graduate Diploma</p>
+<p class="text-lg mt-2">Jettwings:IGD-AHTM</p>
+<p class="text-[0.8rem] mt-4">10 + 2 Pass/Appeared</p>
+<p class="text-[0.8rem] ">10 + 3 Months</p>
+</div>
+<a href="#" class="bg-white z-[9999999] text-red-500 rounded-2xl px-3 py-1 right-5 top-[12rem] absolute">See Details</a>
+
+<div class="bg-gradient-to-t from-red-500  to-transparent rounded-[2rem] absolute w-full right-0 left-0  h-full top-0 bottom-0"></div>
+</div>
+        </div>
+    </div>
+
+
+    <!--End of Courses Section-->
+    <div class="font-bold xxl:text-7xl text-4xl text-center mt-[12rem]"><span class="text-red-500">TOP</span> RECUIRTERS
+    </div>
+    <div
+        class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] mt-[12rem]">
+        <ul
+            class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+
+            <li>
+                <img src=".\Images\Receruiter\Air-Asia.png" alt="Air-Asia" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Courtyard.png" alt="Air-Asia" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Cox-and-Kings.png" alt="Cox-and-Kings" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Etihad-Airways.png" alt="Etihad-Airways" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\IndiGo.png" alt="IndiGo" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Make-my-trip.png" alt="Make-my-trip" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Radisson-blu.png" alt="Radisson-blu" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Singapore-Airlines.png" alt="Singapore-Airlines" class="">
+            </li>
+        </ul>
+        <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+            aria-hidden="true">
+            <li>
+                <img src=".\Images\Receruiter\Air-Asia.png" alt="Air-Asia" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Courtyard.png" alt="Air-Asia" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Cox-and-Kings.png" alt="Cox-and-Kings" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Etihad-Airways.png" alt="Etihad-Airways" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\IndiGo.png" alt="IndiGo" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Make-my-trip.png" alt="Make-my-trip" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Radisson-blu.png" alt="Radisson-blu" class="">
+            </li>
+            <li>
+                <img src=".\Images\Receruiter\Singapore-Airlines.png" alt="Singapore-Airlines" class="">
+            </li>
+        </ul>
+    </div>
+
+    <!--End of Top Recruiters Section-->
+
+    <div class="font-bold xxl:text-7xl text-4xl text-center mt-[12rem]"><span class="text-red-500">PLACEMENT</span>
+        PROCESS</div>
+    <img src=".\Images\placement.png" alt="Air-Asia" class="mx-auto mt-[8rem] lg:w-[50%] xxl:w-full">
+
+    <!--End of Placement Process-->
+
+    <p class="font-bold xxl:text-7xl text-4xl text-center mt-[12rem] mt-[-12rem]">OUR ALUMNI</p>
+
+    <div class="max-w-5xl mx-auto p-4 mt-[8rem]">
+        <div x-data="{ activeSlide: 0 }" class="relative">
+            <div class="flex items-center justify-center w-full h-96 md:h-128 overflow-hidden rounded-lg">
+                <!-- Slide 1 -->
+                <div x-show="activeSlide === 0"
+                    class="w-full h-full transition-opacity duration-700 ease-in-out flex justify-between">
+                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
+                        <div class="h-full flex justify-center items-center">
+                            <!-- Add content here -->
+                            <img src=".\Images\alumni\Alumni.jpg" alt="alumni1"
+                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
+
+
+                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
+                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rem quaerat
+                                similique nihil ullam laudantium doloribus sed vitae veniam,
+                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
+                        </div>
+                    </div>
+                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
+                        <div class="h-full flex justify-center items-center">
+                            <!-- Add content here -->
+                            <img src=".\Images\alumni\Alumni2.jpg" alt="alumni2"
+                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
+
+
+                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
+                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rem quaerat
+                                similique nihil ullam laudantium doloribus sed vitae veniam,
+                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div x-show="activeSlide === 1"
+                    class="w-full h-full transition-opacity duration-700 ease-in-out flex justify-between">
+                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
+                        <div class="h-full flex justify-center items-center">
+                            <!-- Add content here -->
+                            <img src=".\Images\alumni\Alumni.jpg" alt="alumni1"
+                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
+
+
+                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
+                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rem quaerat
+                                similique nihil ullam laudantium doloribus sed vitae veniam,
+                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
+                        </div>
+                    </div>
+                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
+                        <div class="h-full flex justify-center items-center">
+                            <!-- Add content here -->
+                            <img src=".\Images\alumni\Alumni2.jpg" alt="alumni2"
+                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
+
+
+                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
+                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Rem quaerat
+                                similique nihil ullam laudantium doloribus sed vitae veniam,
+                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Add more slides as necessary -->
+            </div>
+            <!-- Navigation dots -->
+            <div class="absolute bottom-0 flex justify-center w-full -mb-7 space-x-0.5">
+                <button @click="activeSlide = 0" :class="{ 'bg-red-600': activeSlide === 0 }"
+                    class="w-3 h-3 rounded-full bg-gray-100 border border-red-600"></button>
+                <button @click="activeSlide = 1" :class="{ 'bg-red-600': activeSlide === 1 }"
+                    class="w-3 h-3 rounded-full bg-gray-100 border border-red-600"></button>
+                <!-- Add more buttons as necessary -->
+            </div>
+            <!-- Navigation buttons -->
+            <div class="absolute top-0 bottom-0 flex justify-between items-center w-full px-4">
+                <button @click="activeSlide = (activeSlide - 1 + 2) % 2"
+                    class="w-10 h-10 rounded-full bg-gray-500/40 text-white flex justify-center items-center ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button @click="activeSlide = (activeSlide + 1) % 2"
+                    class="w-10 h-10 rounded-full bg-gray-500/40 text-white flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
+
+    <!--End of Alumni Section-->
+
+    <div class=" h-screen flex justify-center items-center">
+        <div class="w-1/2 p-10">
+            <form action="" class="space-y-5 mt-5">
+                <div class="flex">
+                    <label class="block w-1/2 pr-2">
+                        <span class="text-gray-700 font-semibold text-lg">Name</span>
+                        <input type="text" class="block w-full px-4 py-2 border rounded-xl bg-red-100 mt-2"
+                            placeholder="" required>
+                    </label>
+                    <label class="block w-1/2 pl-2">
+                        <span class="text-gray-700 font-semibold text-lg">Email</span>
+                        <input type="email" class="block w-full px-4 py-2 border rounded-xl bg-red-100 mt-2"
+                            placeholder="" required>
+                    </label>
+                </div>
+                <label class="block">
+                    <span class="text-gray-700 font-semibold text-lg">Message</span>
+                    <textarea class="block w-full px-4 py-2 border rounded-xl mt-2 resize-none bg-red-100 h-48"
+                        placeholder="Your Message" required></textarea>
+                </label>
+                <div class="flex justify-end">
+                    <button type="submit"
+                        class="block px-4 py-2 bg-red-600 hover:bg-red-700  text-white rounded-lg">send</button>
+                </div>
+        </div>
+        <div class="w-1/2 flex justify-center items-center h-full">
+            <p class="text-4xl font-bold text-gray-600 ">GET IN <span class="text-red-500 ">TOUCH</span> <br />
+                <span class="text-xl font-normal absolute mt-[1.5rem]">Send us a message and we'll get back to you as
+                    soon as we can.</span></p>
+        </div>
+    </div>
+
+    <!--End of Contact Section-->
+
+    <footer class="bg-gray-200 py-12">
+        <div class="max-w-[1800px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <!-- Logo and copyright -->
+                <div class="flex flex-col items-center sm:items-start mb-6 sm:mb-0">
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                        <img src="Images\Jettwings updated_2023.png" class="w-30 sm:w-64 mb-2" alt="Logo">
+                    </a>
+                    <span class="text-gray-600 text-sm">© JetWings. All rights reserved.</span>
+                </div>
+
+                <!-- Contact information -->
+                <div class="flex flex-col sm:ml-16 mb-6 sm:mb-0">
+                    <h3 class="font-semibold text-lg mb-2">GET IN TOUCH</h3>
+                    <p class="text-sm text-gray-600">+9 334 0985500<br />info@jetwings.jet</p>
+                </div>
+
+                <!-- Social media links -->
+                <div class="flex flex-col sm:ml-16">
+                    <h3 class="font-semibold text-lg mb-2">FOLLOW US</h3>
+                    <ul class="flex space-x-4">
+                        <li><a href="https://www.google.com"
+                                class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+                                target="_blank"><img src="https://www.svgrepo.com/show/475647/facebook-color.svg"
+                                    alt="Facebook" class="h-8 w-8"></a></li>
+                        <li><a href="https://www.google.com"
+                                class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+                                target="_blank"><img src="https://www.svgrepo.com/show/452229/instagram-1.svg"
+                                    alt="Instagram" class="h-8 w-8"></a></li>
+                        <li><a href="https://www.google.com"
+                                class="text-gray-600 hover:text-gray-800 transition-colors duration-300"
+                                target="_blank"><img src="https://www.svgrepo.com/show/448252/twitter.svg" alt="Twitter"
+                                    class="h-8 w-8"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
