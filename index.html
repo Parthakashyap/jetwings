@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JetWings</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script.js"></script>
+   
+    <link rel="stylesheet" href="./slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <style>
         
         /* CSS for scrolling horizontally animation */
@@ -53,9 +58,21 @@
     </script>
 
 
+
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Include Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
+
+
 </head>
 
+
+
 <body class="max-w-[1800px] m-auto">
+    
 
     <section class="relative">
         <div class="relative">
@@ -72,7 +89,11 @@
             <p class="text-[2rem] font-bold text-white mt-[-4rem]">Enroll Your Course Now</p>
             <div class="flex flex-col space-y-[1rem] mt-[0.3rem]">
                 <input type="text" placeholder="Enter your Name"
+                class="px-6 py-4 rounded-md border border-gray-200/70" />
+                <input type="text" placeholder="Enter your Email"
                     class="px-6 py-4 rounded-md border border-gray-200/70" />
+                    <input type="text" placeholder="Enter your Contact number"
+                        class="px-6 py-4 rounded-md border border-gray-200/70" />
                 <select name="Course" id="Course"
                     class="px-6 py-4 rounded-md border border-gray-200/70">
                     <option value="">Select your course</option>
@@ -89,10 +110,6 @@
                     <option value="/">c</option>
                     <option value="/">d</option>
                 </select>
-                <input type="text" placeholder="Enter your Contact number"
-                    class="px-6 py-4 rounded-md border border-gray-200/70" />
-                <input type="text" placeholder="Enter your Email"
-                    class="px-6 py-4 rounded-md border border-gray-200/70" />
                     <button
                         class="bg-red-600 hover:bg-red-700 text-white text-[1.2rem] font-bold px-[10.6rem] py-[0.9rem] rounded-lg block mt-4">Enroll
                         Now</button>
@@ -110,6 +127,10 @@
             <h1 class="text-3xl font-semibold mt-[-2rem] text-gray-900">Enroll Your Course Now</h1>
             <div class="flex flex-col space-y-2">
                 <input type="text" placeholder="Enter your Name" class="py-2 px-4 rounded-md border border-gray-300" />
+                <input type="text" placeholder="Enter your Contact number"
+                    class="py-2 px-4 rounded-md border border-gray-300" />
+                <input type="text" placeholder="Enter your Email"
+                    class="py-2 px-4 rounded-md border border-gray-300" />
                 <select name="Course" id="Course"
                     class="py-2 px-4 rounded-md border border-gray-300 focus:ring-red-500 focus:border-red-500">
                     <option value="">Select your course</option>
@@ -126,10 +147,6 @@
                     <option value="/">c</option>
                     <option value="/">d</option>
                 </select>
-                <input type="text" placeholder="Enter your Contact number"
-                    class="py-2 px-4 rounded-md border border-gray-300" />
-                <input type="text" placeholder="Enter your Email"
-                    class="py-2 px-4 rounded-md border border-gray-300" />
             </div>
             <div class="flex justify-center">
                 <button type="submit"
@@ -145,21 +162,21 @@
 <!-- End of Font Section -->
 
 <div class="bg-gray-200 p-4">
-    <p class="md:text-3xl text-lg text-center  h-[26rem] relative lg:w-1/2 w-auto mx-auto">
+    <p class="md:text-3xl text-lg text-center md:h-[26rem] h-[16rem] relative lg:w-1/2 w-auto mx-auto">
         <br/>Introducing <span class="text-red-500">JetWings</span>, A premier Aviation Company Based In India.
         With A Focus On Excellence And Safety. We Offer <span class="text-red-500">Top-Notch</span>
-        AviationServices To meet <span class="text-red-500">All</span> Your Travel Needs.
-        
+        AviationServices To meet <span class="text-red-500">All</span> Your Travel Needs.  
     </p>
+    
 </div>
-<div class="bg-white w-full h-[5rem] rounded-t-[100%] absolute mt-[-5rem]"></div>
+<div class="bg-white w-full h-[5rem] rounded-t-[100%] absolute mt-[-4.5rem]"></div>
 
 <!--End of About Section-->
 
 <div class="p-4">
 
     <div>
-        <div class="font-bold xxl:text-7xl text-4xl text-center mt-[5rem]">COURSES</div>
+        <div class="font-bold xxl:text-7xl text-4xl text-center mt-[4rem]">COURSES</div>
         <div class="grid p-4 lg:grid-cols-3 md:grid-cols-2 gap-x-12 gap-y-12 mt-[4rem] mx-auto container">
             <div class="bg-cover h-32 bg-center bg-no-repeat text-white relative text-[1rem] font-bold py-[9rem] px-[1rem] rounded-[2rem] block"
                 style="background-image: url('./Images/Course_bg.jpg')">
@@ -324,209 +341,140 @@ style="background-image: url('./Images/Course_bg.jpg')">
 
     <!--End of Placement Process-->
 
-    <p class="font-bold xxl:text-7xl text-4xl text-center mt-[7rem]">OUR ALUMNI</p>
+    <p class="font-bold xxl:text-7xl text-4xl text-center mt-[7rem] ">OUR ALUMNI</p>
 
-    <div class="max-w-5xl mx-auto p-4 mt-[4rem]">
-        <div x-data="{ activeSlide: 0 }" class="relative">
-            <div class="flex items-center justify-center w-full h-96 md:h-128 overflow-hidden rounded-lg">
-                <!-- Slide 1 -->
-                <div x-show="activeSlide === 0"
-                    class="w-full h-full transition-opacity duration-700 ease-in-out flex justify-between">
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni.jpg" alt="alumni1"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles 1</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni2.jpg" alt="alumni2"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
+    <div class="wrapper mt-[5rem]">
+        <div class="w-full relative">
+          <ul class="carousel text-black">
+            <li class="card h-96">
+              <div class="img">
+                <img src="https://t4.ftcdn.net/jpg/03/50/40/93/240_F_350409330_2bqhjowfBmrqEia5U8lBsGrvD7h8EIo6.jpg"
+                  alt="img" draggable="false">
+              </div>
+              <h1 class=" font-bold text-2xl mt-3 ">Leticia Kutch</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima eos corporis debitis inventore .</p>
+              <div class="flex mt-3 gap-3">
+                <div class="font-bold text-lg">5.0</div>/5.0 rating
+                <div class="flex gap-1 items-center">
+                  <img src="./public/star-1.svg" alt="">
+                  <img src="./public/star-2.svg" alt="">
+                  <img src="./public/star-3.svg" alt="">
+                  <img src="./public/star-4.svg" alt="">
+                  <img src="./public/star-5.svg" alt="">
                 </div>
-                <!-- Slide 2 -->
-                <div x-show="activeSlide === 1"
-                    class="w-full h-full transition-opacity duration-700 ease-in-out flex justify-between">
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni.jpg" alt="alumni1"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
+              </div>
+            </li>
 
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles 2</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni2.jpg" alt="alumni2"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-
-                        </div>
-                    </div>
+            <li class="card h-96">
+              <div class="img">
+                <img src="https://t4.ftcdn.net/jpg/03/50/40/93/240_F_350409330_2bqhjowfBmrqEia5U8lBsGrvD7h8EIo6.jpg"
+                  alt="img" draggable="false">
+              </div>
+              <h1 class=" font-bold text-2xl mt-3 ">test Kutch</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima eos corporis debitis inventore .</p>
+              <div class="flex mt-3 gap-3">
+                <div class="font-bold text-lg">5.0</div>/5.0 rating
+                <div class="flex gap-1 items-center">
+                  <img src="./public/star-1.svg" alt="">
+                  <img src="./public/star-2.svg" alt="">
+                  <img src="./public/star-3.svg" alt="">
+                  <img src="./public/star-4.svg" alt="">
+                  <img src="./public/star-5.svg" alt="">
                 </div>
+              </div>
+            </li>
 
-                <!-- Slide 3 -->
-                <div x-show="activeSlide === 2"
-                    class="w-full h-full transition-opacity duration-700 ease-in-out flex justify-between">
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni.jpg" alt="alumni1"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles 3</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni2.jpg" alt="alumni2"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
+            <li class="card h-96">
+              <div class="img">
+                <img src="https://t4.ftcdn.net/jpg/03/50/40/93/240_F_350409330_2bqhjowfBmrqEia5U8lBsGrvD7h8EIo6.jpg"
+                  alt="img" draggable="false">
+              </div>
+              <h1 class=" font-bold text-2xl mt-3 ">dummy Kutch</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima eos corporis debitis inventore .</p>
+              <div class="flex mt-3 gap-3">
+                <div class="font-bold text-lg">5.0</div>/5.0 rating
+                <div class="flex gap-1 items-center">
+                  <img src="./public/star-1.svg" alt="">
+                  <img src="./public/star-2.svg" alt="">
+                  <img src="./public/star-3.svg" alt="">
+                  <img src="./public/star-4.svg" alt="">
+                  <img src="./public/star-5.svg" alt="">
                 </div>
+              </div>
+            </li>
 
-                <!-- Slide 4 -->
-                <div x-show="activeSlide === 3"
-                    class="w-full h-full transition-opacity duration-700 ease-in-out flex justify-between">
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni.jpg" alt="alumni1"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles 4</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 bg-gray-50 mx-2 rounded-2xl border-2 border-red-600 relative">
-                        <div class="h-full flex justify-center items-center">
-                            <!-- Add content here -->
-                            <img src=".\Images\alumni\Alumni2.jpg" alt="alumni2"
-                                class="rounded-full w-[7rem] h-[7rem] p-4 absolute top-2 left-2 ">
-
-
-                            <h1 class="text-3xl font-bold left-4 top-[34%] absolute">Floyd Miles</h1>
-                            <p class="text-md left-4 top-[50%] absolute">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Rem quaerat
-                                similique nihil ullam laudantium doloribus sed vitae veniam,
-                                iusto eveniet delectus? Ut consectetur ad in numquam possimus quam incidunt velit.</p>
-                        </div>
-                    </div>
+            <li class="card h-96">
+              <div class="img">
+                <img src="https://t4.ftcdn.net/jpg/03/50/40/93/240_F_350409330_2bqhjowfBmrqEia5U8lBsGrvD7h8EIo6.jpg"
+                  alt="img" draggable="false">
+              </div>
+              <h1 class=" font-bold text-2xl mt-3 ">new Test Kutch</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima eos corporis debitis inventore .</p>
+              <div class="flex mt-3 gap-3">
+                <div class="font-bold text-lg">5.0</div>/5.0 rating
+                <div class="flex gap-1 items-center">
+                  <img src="./public/star-1.svg" alt="">
+                  <img src="./public/star-2.svg" alt="">
+                  <img src="./public/star-3.svg" alt="">
+                  <img src="./public/star-4.svg" alt="">
+                  <img src="./public/star-5.svg" alt="">
                 </div>
+              </div>
+            </li>
 
-
-                <!-- Add more slides as necessary -->
-
-
-            </div>
-            <!-- Navigation dots -->
-            <div class="absolute bottom-0 flex justify-center w-full -mb-7 space-x-0.5">
-                <button @click="activeSlide = 0" :class="{ 'bg-red-600': activeSlide === 0 }"
-                    class="w-3 h-3 rounded-full bg-gray-100 border border-red-600"></button>
-                <button @click="activeSlide = 1" :class="{ 'bg-red-600': activeSlide === 1 }"
-                    class="w-3 h-3 rounded-full bg-gray-100 border border-red-600"></button>
-                <button @click="activeSlide = 2" :class="{ 'bg-red-600': activeSlide === 2 }"
-                    class="w-3 h-3 rounded-full bg-gray-100 border border-red-600"></button>
-                <button @click="activeSlide = 3" :class="{ 'bg-red-600': activeSlide === 3 }"
-                    class="w-3 h-3 rounded-full bg-gray-100 border border-red-600"></button>
-                <!-- Add more buttons as necessary -->
-            </div>
-
-
-            <!-- Navigation buttons -->
-<div class="absolute top-0 bottom-0 flex justify-between items-center w-full px-4">
-    <button @click="activeSlide = (activeSlide - 1 + 4) % 4"
-        class="w-10 h-10 rounded-full bg-gray-500/40 text-white flex justify-center items-center ">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-    </button>
-    <button @click="activeSlide = (activeSlide + 1) % 4"
-        class="w-10 h-10 rounded-full bg-gray-500/40 text-white flex justify-center items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-    </button>
-</div>
-
+            <li class="card h-96">
+              <div class="img">
+                <img src="https://t4.ftcdn.net/jpg/03/50/40/93/240_F_350409330_2bqhjowfBmrqEia5U8lBsGrvD7h8EIo6.jpg"
+                  alt="img" draggable="false">
+              </div>
+              <h1 class=" font-bold text-2xl mt-3 ">new Dummy Kutch</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima eos corporis debitis inventore .</p>
+              <div class="flex mt-3 gap-3">
+                <div class="font-bold text-lg">5.0</div>/5.0 rating
+                <div class="flex gap-1 items-center">
+                  <img src="./public/star-1.svg" alt="">
+                  <img src="./public/star-2.svg" alt="">
+                  <img src="./public/star-3.svg" alt="">
+                  <img src="./public/star-4.svg" alt="">
+                  <img src="./public/star-5.svg" alt="">
+                </div>
+              </div>
+            </li>
         </div>
+        <div class="flex justify-center mt-6 items-center gap-4">
+          <button class="text-black  fa-solid fa-arrow-left" id="left"></button>
+          <div class="bg-red-600 p-2 w-12 h-12 flex items-center justify-center rounded-full">
+            <button class="text-white fa-solid fa-arrow-right " id="right"></button>
+          </div>
+        </div>
+        </ul>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"></script>
-
     <!--End of Alumni Section-->
 
-    <div class=" h-screen flex justify-center flex-col-reverse md:flex-row w-full items-center ">
-        <div class="p-10 rounded-xl shadow-lg">
+    <div class=" h-screen flex justify-center flex-col-reverse md:flex-row w-full items-center p-4">
+        <div class="p-10 rounded-xl shadow-lg bg-red-600">
             <form action="" class="space-y-5 mt-5">
                 <div class="flex">
                     <label class="block w-1/2 pr-2">
-                        <span class="text-gray-700 font-semibold text-lg">Name</span>
+                        <span class="text-white font-semibold text-lg">Name</span>
                         <input type="text" class="block w-full px-4 py-2 border rounded-lg bg-gray-100 shadow-md mt-2"
                             placeholder="Your Name" required>
                     </label>
                     <label class="block w-1/2 pl-2">
-                        <span class="text-gray-700 font-semibold text-lg">Email</span>
+                        <span class="text-white font-semibold text-lg">Email</span>
                         <input type="email" class="block w-full px-4 py-2 border rounded-lg bg-gray-100 shadow-md mt-2"
                             placeholder="Your Email" required>
                     </label>
                 </div>
                 <label class="block">
-                    <span class="text-gray-700 font-semibold text-lg">Message</span>
+                    <span class="text-white font-semibold text-lg">Message</span>
                     <textarea class="block w-full px-4 py-2 border rounded-lg mt-2 resize-none bg-gray-100 shadow-md h-48"
                         placeholder="Your Message" required></textarea>
                 </label>
                 <div class="flex md:justify-end w-full">
                     <button type="submit"
-                        class="block px-8 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg">send</button>
+                        class="block px-8 py-2 bg-white hover:bg-gray-200 text-red-600 font-semibold rounded-lg">send</button>
                 </div>
         </div>
 
@@ -582,6 +530,33 @@ style="background-image: url('./Images/Course_bg.jpg')">
     </footer>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+      $('.basic-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
+        }
+    },
+    navText: [
+        '<i class="fas fa-chevron-left"></i>',
+        '<i class="fas fa-chevron-right"></i>'
+    ]
+});;
+    </script>
 
 
 </body>
